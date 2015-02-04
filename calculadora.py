@@ -7,18 +7,22 @@ import sys
 
 def sumar(sumando1, sumando2):
     """Suma dos enteros o floats"""
+
     return sumando1 + sumando2
 
 def restar(minuendo, sustraendo):
     """Resta dos enteros o floats"""
+
     return minuendo - sustraendo
 
 def multiplicar(factor1, factor2):
     """Multiplica dos enteros o floats"""
+
     return factor1 * factor2
 
 def dividir(dividendo, divisor):
     """Divide dos enteros o floats"""
+
     return dividendo / divisor
 
 if __name__ == "__main__":
