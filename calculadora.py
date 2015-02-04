@@ -18,30 +18,30 @@ def dividir(dividendo, divisor):
     return dividendo / divisor
 
 if __name__ == "__main__":
-	operacion = str(sys.argv[1])
+    operacion = str(sys.argv[1])
 
-	try:
-		numero1 = float(sys.argv[2])
-	except ValueError:
-		sys.exit("Sorry, I need a number ")
+    try:
+        numero1 = float(sys.argv[2])
+    except ValueError:
+        sys.exit("Sorry, I need a number ")
 
-	try:
-		numero2 = float(sys.argv[3])
-	except ValueError:
-		sys.exit("Sorry, I need a number ")
+    try:
+        numero2 = float(sys.argv[3])
+    except ValueError:
+        sys.exit("Sorry, I need a number ")
 
-	if operacion == "sum":
-		print ("El resultado es: " + str(sumar(numero1, numero2)))
-	elif operacion == "rest":
-		print ("El resultado es: " + str(restar(numero1, numero2)))
+    if operacion == "sum":
+        print ("El resultado es: " + str(sumar(numero1, numero2)))
+    elif operacion == "rest":
+        print ("El resultado es: " + str(restar(numero1, numero2)))
 
-	elif operacion == "div":
-		try:
-			print ("El resultado es: " + str(dividir(numero1, numero2)))
-		except ZeroDivisionError:
-			sys.exit("I can't solve this operation ")
+    elif operacion == "div":
+        try:
+            print ("El resultado es: " + str(dividir(numero1, numero2)))
+        except ZeroDivisionError:
+            sys.exit("I can't solve this operation ")
 
-	elif operacion == "mult":
-		print ("El resultado es: " + str(multiplicar(numero1, numero2)))
-	else:
-		print ("Your operation is incorrect")
+    elif operacion == "mult":
+        print ("El resultado es: " + str(multiplicar(numero1, numero2)))
+    else:
+        print ("Your operation is incorrect")
